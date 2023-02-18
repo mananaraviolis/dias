@@ -15,17 +15,17 @@
 
 <style>
 #rays{
-    animation: sol 15s ease-in-out infinite alternate;
+    animation: sol 15s infinite linear;
     transform-origin:center;
     transform-box:fill-box;
 }
 
 @keyframes sol{
-    0%{
+    from{
         transform: rotateZ(0deg);
     }
-    100%{
-        transform: rotateZ(360deg);
+    to{
+        transform: rotateZ(359deg);
     }
 }
         </style>
